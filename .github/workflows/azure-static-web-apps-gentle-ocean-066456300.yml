@@ -12,13 +12,13 @@ on:
 
 jobs:
   call_aswa_flow:
-    uses: jintfs/my-second-static-web-app/.github/workflows/build-test-2.yaml@main
+    uses: jintfs/my-first-static-web-app/.github/workflows/build-test-2.yaml@main
 
     with:
       event_name: ${{ github.event_name }}
       event_action: ${{ github.event.action }}
       app_location: "/"
-      api_location: "api"
+      api_location: ""
       output_location: "dist/angular-basic"
 
     secrets:
